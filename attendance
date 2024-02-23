@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int totalClasses, attendedClasses;
+    float attendancePercentage;
+
+    printf("Enter the total number of classes: ");
+    scanf("%d", &totalClasses);
+
+    printf("Enter the number of classes attended: ");
+    scanf("%d", &attendedClasses);
+
+    // Calculate attendance percentage
+    attendancePercentage = (float)attendedClasses / totalClasses * 100;
+
+    // Check if attendance meets the qualification criteria
+    if (attendancePercentage >= 75) {
+        printf("Congratulations! You meet the attendance qualification.\n");
+    } else {
+        printf("Sorry, your attendance does not meet the qualification criteria.\n");
+    }
+
+    return 0;
+}
