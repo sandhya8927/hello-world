@@ -23,8 +23,7 @@ void absolute() {
   printf("Absolute value of %d = %d\n", num2, abs_num2);
 }
 int main() {
-  printf("Enter two numbers: ");
-  scanf("%d %d", &num1, &num2);
+
   add();
   subtract();
   multiply();
